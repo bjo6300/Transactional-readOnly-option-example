@@ -1,4 +1,4 @@
-# transactional-example
+# Transactional-readOnly-option-example
 ## @Transactional 옵션에 따른 JPA save 예제
 
 1. 서비스에 @Transactional이 적용된 경우에 쓰기 연산 동작 과정
