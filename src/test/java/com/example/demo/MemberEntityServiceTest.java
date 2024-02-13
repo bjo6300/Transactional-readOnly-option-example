@@ -23,7 +23,7 @@ class MemberEntityServiceTest {
     }
 
     @Test
-    void saveMember1() {
+    void saveMember1_ReadOnlyFalse() {
         memberEntityService.saveMember1("김11");
 
         MemberEntity memberEntity = memberEntityRepository.findByName("김11")
@@ -33,7 +33,7 @@ class MemberEntityServiceTest {
     }
 
     @Test
-    void saveMember2() {
+    void saveMember2_ReadOnlyTrue() {
         memberEntityService.saveMember2("김11");
 
         MemberEntity memberEntity = memberEntityRepository.findByName("김11")
@@ -43,7 +43,7 @@ class MemberEntityServiceTest {
     }
 
     @Test
-    void saveMember3() {
+    void saveMember3_트랜잭셔널_없음() {
         memberEntityService.saveMember3("김11");
 
         MemberEntity memberEntity = memberEntityRepository.findByName("김11")
